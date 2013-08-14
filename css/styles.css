@@ -13,8 +13,8 @@ h1,h3,h4,h5,h6,article,section,aside{
 }
 .nivoSlider img {
     position:absolute;
-    top:0px;
-    left:0px;
+    top:0em;
+    left:0em;
     display:none;
 }
 .nivoSlider a {
@@ -28,9 +28,13 @@ h1,h3,h4,h5,h6,article,section,aside{
 
 
 body{
-	width:960px;
+	width:90%;
 	margin:0 auto;
 	background:#0cc;
+}
+
+body img{
+	width:90%;
 }
 
 header,content,aside,article{
@@ -41,19 +45,20 @@ header,content,aside,article{
 }
 
 header{
+	height:1em;
 	background:#ccc;
 }
 
 header ul{
-	padding:0;
-	margin:0;
-	width:97%;
+	padding:0em;
+	margin:0em;
+	width:92%;
 	list-style:none;
 	
 }
 
 header li{
-	display:inline;
+	width:100%;
 }
 
 header li a{
@@ -96,7 +101,7 @@ h1{
 
 .article{
 	margin:0 auto;
-	width:32%;
+	width:30%;
 	margin-top:2%;
 	float:left;
 	font-family:Arial, Helvetica, sans-serif;
@@ -125,17 +130,17 @@ h2{
 
 #gallery img{
 	float:left;
-	width:140px;
-	height:100px;
+	width:12em;
+	height:10em;
 	padding:.425%;
     border:2px #e5e5e5 solid;
-    -moz-border-radius: 8px;
-    border-radius:      8px;
+    -moz-border-radius:8px;
+    border-radius:8px;
 	
 }
 
 #gallery img:hover{
-	border:2px #0CC solid;
+	border:1% #0CC solid;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     -khtml-border-radius: 8px;  
@@ -167,9 +172,9 @@ p a{
 .pricing_table {
 	font-family:Arial, Helvetica, sans-serif;
 	line-height: 200%; 
-	font-size: 12px; 
+	font-size: .13em; 
 	margin: 0 auto; 
-	width: 100%;  
+	width: 88%;  
 }
 		
 .price_block {
@@ -180,8 +185,8 @@ p a{
 	color: #fff; 
 	list-style-type: none; 
 	box-sizing: border-box;
-	margin-bottom: 10px; 
-	border-bottom: 1px solid transparent; 
+	margin-bottom: 1%; 
+	border-bottom: .125em solid transparent; 
 }
 		
 		/*Price heads*/
@@ -196,12 +201,12 @@ p a{
 	display: table; 
 	background: #444; 
 	width: 100%; 
-	height: 70px; 
+	height: 5em; 
 }
 		
 .price_figure {
 	background:#e63636;
-	font-size: 24px; 
+	font-size: 10em; 
 	text-transform: uppercase; 
 	vertical-align: middle; 
 	display: table-cell;
@@ -213,7 +218,7 @@ p a{
 }
 
 .price_tenure {
-	font-size: 11px; 
+	font-size: 1.5em; 
 }
 		
 		/*Features*/
@@ -223,26 +228,15 @@ p a{
 }
 		
 .features li {
-	padding: 8px 15px;
+	padding: 1em 2em;
 	border-bottom: 1px solid #ccc; 
-	font-size: 11px; 
+	font-size: 6.5em; 
 	list-style-type: none;
 }
 		
 .footer {
-	padding: 15px; 
+	padding: .16em; 
 	background: #DEF0F4;
-}
-	
-.action_button {
-	text-decoration: none; 
-	color: #fff; 
-	font-weight: bold; 
-	border-radius: 5px; 
-	background: linear-gradient(#e63636, #d57a21); 
-	padding: 5px 20px; 
-	font-size: 11px; 
-	text-transform: uppercase;
 }
 		
 .price_block:hover {
@@ -265,72 +259,116 @@ p a{
 	background: linear-gradient(#F9B84A, #DB7224); 
 }	
 
-													/*                 Contact             */
 
-form{
-	margin-top:3%;
+													/*                 form               */
+													
+
+#contact-form input[type="text"], #contact-form input[type="email"], #contact-form input[type="tel"], #contact-form input[type="url"], #contact-form textarea, #contact-form button[type="submit"] {
+	font-fmaily:"Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-input, textarea {
-	padding: 1%;
-	border: 1px solid #E5E5E5;
-	width: 200px;
-	color: #999999;
-	box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
-	-moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
-	-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;		
+#contact-form {
+	text-shadow:0 .25em 0 #FFF;
+	border-radius:4px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	background:#F9F9F9;
+	padding:25px;
 }
 
-textarea {
-	width: 400px;
-	height: 150px;
-	max-width: 400px;
-	line-height: 18px;
+#contact-form h3 {
+	color:#d57a21;
+	display:block;
+	font-size:2.029em;
 }
 
-input:hover, textarea:hover,
-input:focus, textarea:focus {
-	border: 1px solid #C9C9C9;
-	box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
-	-moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
-	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;	
-}
-
-.form label {
-	margin-left: 10px;
-	color: #999999;
-}
-
-/* ===========================
-   ====== Submit Button ====== 
-   =========================== */
-
-.submit input {
-	width: 100px; 
-	height: 40px;
-	background-color: #474E69; 
-	color: #FFF;
-	border-radius: 3px;
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;		
-}		
-
-aside{
-	width:40%;
-	margin:0 auto;
+#contact-form h4 {
 	font-family:Arial, Helvetica, sans-serif;
-	font-size:.999em;
-	float:right;
+	margin:1% 0 1%;
+	display:block;
+	font-size:.8em;
 }
-													
-													
-													
+
+#contact-form label span {
+	
+	color:#991D57;
+	display:block;
+	margin:1% 0;
+	font-weight:900;
+}
+
+#contact-form input[type="text"], #contact-form input[type="email"], #contact-form input[type="tel"], #contact-form input[type="url"], #contact-form textarea {
+	width:100%;
+	box-shadow:inset 0 1px 2px #DDD, 0 1px 0 #FFF;
+	-webkit-box-shadow:inset 0 1px 2px #DDD, 0 1px 0 #FFF;
+	-moz-box-shadow:inset 0 1px 2px #DDD, 0 1px 0 #FFF;
+	border:.125em solid #CCC;
+	background:#FFF;
+	margin:0 0 1%;
+	padding:1%;
+}
+
+#contact-form input[type="text"]:hover, #contact-form input[type="email"]:hover, #contact-form input[type="tel"]:hover, #contact-form input[type="url"]:hover, #contact-form textarea:hover {
+	-webkit-transition:border-color 0.3s ease-in-out;
+	-moz-transition:border-color 0.3s ease-in-out;
+	transition:border-color 0.3s ease-in-out;
+	border:.125em solid #AAA;
+}
+
+#contact-form textarea {
+	height:1.5em;
+	max-width:100%;
+}
+
+#contact-form button[type="submit"] {
+	width:100%;
+	border:none;
+	background:#d57a21;
+	color:#FFF;
+	margin:0 0 1%;
+	padding:10px;
+	border-radius:1%;
+}
+
+#contact-form button[type="submit"]:hover {
+	background-color:#e63636;
+	background-color:#e63636;
+	background-color:#e63636;
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+}
+
+
+#contact-form input:focus, #contact-form textarea:focus {
+	outline:0;
+	border:.125em solid #999;
+}
+
+::-webkit-input-placeholder {
+    color:#e63636;
+}
+
+:-moz-placeholder {
+    color:#e63636;
+}
+
+::-moz-placeholder {
+    color:#e63636;
+}
+
+:-ms-input-placeholder {
+    color:#e63636;
+}
+
+
 													/*                 footer             */
 
 footer{
 	background:#ccc;
-	widtH:98%;
+	width:98%;
 	padding:3% 2%;
+	height:1em;
 }
 
 footer ul{
