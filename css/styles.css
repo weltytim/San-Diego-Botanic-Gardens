@@ -153,7 +153,6 @@ h2{
 }
 
 #gallery img:hover{
-	border:.25em #0CC solid;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     -khtml-border-radius: 8px;  
@@ -190,7 +189,6 @@ h2{
 }
 
 #gallery2 img:hover{
-	border:.25em #0CC solid;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     -khtml-border-radius: 8px;  
